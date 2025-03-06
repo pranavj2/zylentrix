@@ -2,14 +2,14 @@ import 'package:network_package/network_package.dart';
 
 import '../model/posts_model.dart';
 
-abstract class ProductDataSource {
-  Future<List<PostsModel>> getAllProducts();
+abstract class PostsDataSource {
+  Future<List<PostsModel>> getAllPosts();
 }
 
-class ProductDataSourceImpl extends ProductDataSource {
+class PostsDataSourceImpl extends PostsDataSource {
   NetworkPackage networkPackage = NetworkPackage();
   @override
-  Future<List<PostsModel>> getAllProducts() async {
-    return networkPackage.fetchProducts();
+  Future<List<PostsModel>> getAllPosts() async {
+    return networkPackage.fetchPosts();
   }
 }

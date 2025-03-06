@@ -1,4 +1,4 @@
-part of 'plp_bloc.dart';
+part of 'posts_bloc.dart';
 
 @immutable
 sealed class PostsState {

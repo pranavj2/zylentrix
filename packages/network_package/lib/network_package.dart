@@ -10,7 +10,7 @@ class NetworkPackage {
   NetworkPackage([http.Client? client]) {
     this.client = client ?? http.Client();
   }
-  Future<List<PostsModel>> fetchProducts() async {
+  Future<List<PostsModel>> fetchPosts() async {
     String url = Urls.postsUrl;
 
     final response = await client!.get(

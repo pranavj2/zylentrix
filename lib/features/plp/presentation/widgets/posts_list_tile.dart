@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:poc_one/features/plp/presentation/plp_bloc/plp_bloc.dart';
+import 'package:poc_one/features/plp/presentation/plp_bloc/posts_bloc.dart';
 
 
 class PostsListTile extends StatelessWidget {
-  final ProductFetchSuccessState successState;
+  final PostsFetchSuccessState successState;
    const PostsListTile({super.key, required this.successState});
 
   @override

@@ -6,17 +6,17 @@ import '../../domain/repositories/posts_repository.dart';
 import '../datasource/posts_datasource.dart';
 
 class ProductRepositoryImpl implements ProductRepository {
-  ProductDataSource? productDataSource;
+  PostsDataSource? productDataSource;
 
-  ProductRepositoryImpl([ProductDataSource? productDataSource]) {
-    this.productDataSource = productDataSource ?? ProductDataSourceImpl();
+  ProductRepositoryImpl([PostsDataSource? productDataSource]) {
+    this.productDataSource = productDataSource ?? PostsDataSourceImpl();
   }
 
   @override
   Future<Either<Failure, List<PostsEntity>>> getAllProducts() async {
     try {
-      final productsData = await productDataSource!.getAllProducts();
-      final List<PostsEntity> remoteProductEntity = List.from(
+      final productsData = await productDataSource!.getAllPosts();
+      final List<PostsEntity> remotePostsEntity = List.from(
           productsData.map((e) => postsEntity(
               e.userId,
               e.id,
@@ -24,7 +24,7 @@ class ProductRepositoryImpl implements ProductRepository {
               e.body,
               )));
 
-      return Right(remoteProductEntity);
+      return Right(remotePostsEntity);
     } catch (e) {
       throw UnimplementedError();
     }

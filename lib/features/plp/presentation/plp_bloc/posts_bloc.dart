@@ -9,8 +9,8 @@ import '../../data/repositories/posts_repository_impl.dart';
 import '../../domain/entities/posts_entity.dart';
 import '../../domain/repositories/posts_repository.dart';
 
-part 'plp_event.dart';
-part 'plp_state.dart';
+part 'posts_event.dart';
+part 'posts_state.dart';
 
 class PostsBloc extends Bloc<PostsEvent, PostsState> {
   ProductRepository? productRepository;
