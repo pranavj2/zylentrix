@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:poc_one/core/execption.dart';
-import 'package:poc_one/features/plp/data/model/posts_model.dart';
+import 'package:poc_one/features/posts/data/model/posts_model.dart';
 import 'package:poc_one/core/constants/api_endpoints/urls.dart';
 
 class NetworkPackage {

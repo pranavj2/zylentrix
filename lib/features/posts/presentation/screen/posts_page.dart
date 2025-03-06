@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:poc_one/features/plp/presentation/plp_bloc/posts_bloc.dart';
 
+
+import '../plp_bloc/posts_bloc.dart';
 import '../widgets/posts_list_tile.dart';
 
-class PlpPage extends StatefulWidget {
-  const PlpPage({super.key});
+class PostsPage extends StatefulWidget {
+  const PostsPage({super.key});
 
   @override
-  State<PlpPage> createState() => _PlpPageState();
+  State<PostsPage> createState() => _PostsPageState();
 }
 
-class _PlpPageState extends State<PlpPage> {
+class _PostsPageState extends State<PostsPage> {
   TextEditingController textEditingController = TextEditingController();
 
 

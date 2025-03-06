@@ -1,8 +1,7 @@
-
-
 import 'package:flutter/material.dart';
 
-import 'package:poc_one/features/plp/presentation/plp_bloc/posts_bloc.dart';
+import '../plp_bloc/posts_bloc.dart';
+
 
 
 class PostsListTile extends StatelessWidget {
