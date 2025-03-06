@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../plp_bloc/posts_bloc.dart';
-
-
+import '../posts_bloc/posts_bloc.dart';
 
 class PostsListTile extends StatelessWidget {
   final PostsFetchSuccessState successState;

@@ -1,7 +1,5 @@
 import 'package:dartz/dartz.dart';
 import 'package:poc_one/core/failure.dart';
-
-
 import '../../domain/entities/posts_entity.dart';
 import '../../domain/repositories/posts_repository.dart';
 import '../datasource/posts_datasource.dart';

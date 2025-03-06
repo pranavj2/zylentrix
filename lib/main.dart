@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'features/posts/presentation/plp_bloc/posts_bloc.dart';
+import 'features/posts/presentation/posts_bloc/posts_bloc.dart';
 import 'features/posts/presentation/screen/posts_page.dart';
-
 
 void main() {
   runApp(const MyApp());

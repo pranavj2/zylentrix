@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-
-import '../plp_bloc/posts_bloc.dart';
+import '../posts_bloc/posts_bloc.dart';
 import '../widgets/posts_list_tile.dart';
 
 class PostsPage extends StatefulWidget {

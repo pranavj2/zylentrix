@@ -1,9 +1,7 @@
 import 'dart:async';
-
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
-
 import '../../../../core/execption.dart';
 import '../../data/repositories/posts_repository_impl.dart';
 import '../../domain/entities/posts_entity.dart';

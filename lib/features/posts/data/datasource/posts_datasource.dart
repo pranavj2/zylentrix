@@ -1,5 +1,4 @@
 import 'package:network_package/network_package.dart';
-
 import '../model/posts_model.dart';
 
 abstract class PostsDataSource {
