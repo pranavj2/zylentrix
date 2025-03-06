@@ -1,10 +1,10 @@
 part of 'plp_bloc.dart';
 
-sealed class PlpEvent extends Equatable {
-  const PlpEvent();
+sealed class PostsEvent extends Equatable {
+  const PostsEvent();
 }
 
-class InitialfetchEvent extends PlpEvent {
+class InitialfetchEvent extends PostsEvent {
   const InitialfetchEvent();
   @override
   // TODO: implement props

@@ -12,21 +12,21 @@ import '../../domain/repositories/posts_repository.dart';
 part 'plp_event.dart';
 part 'plp_state.dart';
 
-class PlpBloc extends Bloc<PlpEvent, PlpState> {
+class PostsBloc extends Bloc<PostsEvent, PostsState> {
   ProductRepository? productRepository;
-  PlpBloc([ProductRepository? productRepository]) : super(const PlpInitial()) {
+  PostsBloc([ProductRepository? productRepository]) : super(const PostsInitial()) {
     this.productRepository = productRepository ?? ProductRepositoryImpl();
     on<InitialfetchEvent>(initialfetchEvent);
   }
   FutureOr<void> initialfetchEvent(
-      InitialfetchEvent event, Emitter<PlpState> emit) async {
-    emit(PlpLoading());
+      InitialfetchEvent event, Emitter<PostsState> emit) async {
+    emit(PostsLoading());
     try {
       var productsResponse = await productRepository!.getAllProducts();
 
-      productsResponse.fold((failure) => emit(ProductsLoadingFailure()),
+      productsResponse.fold((failure) => emit(PostsLoadingFailure()),
           (productList) {
-        emit(ProductFetchSuccessState(productList: productList));
+        emit(PostsFetchSuccessState(productList: productList));
       });
     } catch (e) {
       throw ServerException();
